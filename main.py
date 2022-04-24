@@ -15,7 +15,7 @@ if triangle == "1":
     dotC = [100, 200 + math.sqrt(150000)]  # 2
 
 #Starting Points | 90 degree triangle
-if triangle == "2":
+else:
     dotA = [100, 100]
     dotB = [700, 700]
     dotC = [100, 700]
@@ -73,7 +73,6 @@ while run:
                 count += 1
             else:
                 for i in range(dots - first):
-                    #time.sleep(0.05)
                     count += 1
                     new_dots.append(calc_dot(new_dots[-1]))
                     draw_screen(new_dots[-1])
